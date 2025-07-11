@@ -4,14 +4,40 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <name>OcrSpaceLib</name>
+    <description>Java wrapper for OCR.Space API</description>
+    <url>https://github.com/RaphaelGF11/OcrSpaceLib</url>
     <groupId>net.raphaelgf11.lib.ocrspace</groupId>
     <artifactId>OcrSpaceLib</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <name>RaphaelGF11</name>
+            <email>thebest@raphaelgf11.ovh</email>
+            <timezone>UTC+1</timezone>
+            <url>https://raphaelgf11.ovh</url>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://raphaelgf11.ovh/liscenses/net.raphaelgf11.lib.ocrspace.OcrSpaceLib.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+    </dependencies>
 </project>
